@@ -1,0 +1,1803 @@
+--[=[
+
+    ___      _  _     __     _         _         ____   
+
+  ,"___".   FJ  L]    FJ    FJ        FJ        [__  '. 
+
+  FJ---L]  J |__| L  J  L  J |       J |        `--7 .' 
+
+ J |   LJ  |  __  |  |  |  | |       | |         .'.'.' 
+
+ | \___--. F L__J J  F  J  F L_____  F L_____  .' (_(__ 
+
+ J\_____/FJ__L  J__LJ____LJ________LJ________LJ________L
+
+  J_____F |__L  J__||____||________||________||________|
+
+                                                        
+
+ 
+
+]=]
+
+--Huge thanks for Bread for good textbox and remake the sliders :D
+
+--GuiToLua By Creator of Backdoor.exe
+
+-- Arceus X v3 Remake
+
+local AZY = {};
+
+-- StarterGui.DISCORD [ TN ] ARCES X
+
+AZY["1"] = Instance.new("ScreenGui", game.CoreGui);
+
+AZY["1"]["Name"] = [[ArceusXV3]];
+
+AZY["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+AZY["1"]["ResetOnSpawn"] = false;
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome
+
+AZY["2"] = Instance.new("Folder", AZY["1"]);
+
+AZY["2"]["Name"] = [[Welcome]];
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Frame
+
+AZY["3"] = Instance.new("Frame", AZY["2"]);
+
+AZY["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["3"]["BackgroundTransparency"] = 0.699999988079071;
+
+AZY["3"]["Size"] = UDim2.new(100.58300018310547, 0, 10.576000213623047, 0);
+
+AZY["3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+
+AZY["3"]["Position"] = UDim2.new(-0.012608751654624939, 0, -1.0678343772888184, 0);
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Frame.UIAspectRatioConstraint
+
+AZY["4"] = Instance.new("UIAspectRatioConstraint", AZY["3"]);
+
+AZY["4"]["AspectRatio"] = 2.0052521228790283;
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome
+
+AZY["5"] = Instance.new("Frame", AZY["2"]);
+
+AZY["5"]["BackgroundColor3"] = Color3.fromRGB(52, 52, 52);
+
+AZY["5"]["Size"] = UDim2.new(0.666020393371582, 0, 0.8211921453475952, 0);
+
+AZY["5"]["Position"] = UDim2.new(0.17622511088848114, 0, 0.0894039198756218, 0);
+
+AZY["5"]["Name"] = [[Welcome]];
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.UIAspectRatioConstraint
+
+AZY["6"] = Instance.new("UIAspectRatioConstraint", AZY["5"]);
+
+AZY["6"]["AspectRatio"] = 1.6193960905075073;
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame
+
+AZY["7"] = Instance.new("ScrollingFrame", AZY["5"]);
+
+AZY["7"]["Active"] = true;
+
+AZY["7"]["CanvasSize"] = UDim2.new(0, 0, 1.2000000476837158, 0);
+
+AZY["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["7"]["BackgroundTransparency"] = 1;
+
+AZY["7"]["Size"] = UDim2.new(1.0180450677871704, 0, 1, 0);
+
+AZY["7"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["7"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["7"]["ScrollBarThickness"] = 7;
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame.Text
+
+AZY["8"] = Instance.new("TextLabel", AZY["7"]);
+
+AZY["8"]["TextWrapped"] = true;
+
+AZY["8"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+
+AZY["8"]["TextScaled"] = true;
+
+AZY["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+
+AZY["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+
+AZY["8"]["TextSize"] = 29;
+
+AZY["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["8"]["Size"] = UDim2.new(0.8902860283851624, 0, 0.6482642889022827, 0);
+
+AZY["8"]["Text"] = [[Dear User,
+
+Server Tn Beta Arceus x by script error message 
+
+If there is an error in the script, enter the server tn And open the technical support ticket, and it will respond to you as soon as possibl
+
+This is not Arceus x v3 This is a script
+
+Best regards,
+
+SPDM Team]];
+
+AZY["8"]["Name"] = [[Text]];
+
+AZY["8"]["BackgroundTransparency"] = 1;
+
+AZY["8"]["Position"] = UDim2.new(0.04280221089720726, 0, 0.14032021164894104, 0);
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame.Text.LocalScript
+
+AZY["9"] = Instance.new("LocalScript", AZY["8"]);
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame.TextButton
+
+AZY["a"] = Instance.new("TextButton", AZY["7"]);
+
+AZY["a"]["TextWrapped"] = true;
+
+AZY["a"]["TextScaled"] = true;
+
+AZY["a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["a"]["TextSize"] = 24;
+
+AZY["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["a"]["Size"] = UDim2.new(0.2372465580701828, 0, 0.10296772420406342, 0);
+
+AZY["a"]["Text"] = [[Get started]];
+
+AZY["a"]["Position"] = UDim2.new(0.3705448806285858, 0, 0.8786289095878601, 0);
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame.TextButton.UICorner
+
+AZY["b"] = Instance.new("UICorner", AZY["a"]);
+
+AZY["b"]["CornerRadius"] = UDim.new(0, 12);
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame.TextButton.UITextSizeConstraint
+
+AZY["c"] = Instance.new("UITextSizeConstraint", AZY["a"]);
+
+AZY["c"]["MaxTextSize"] = 24;
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame.TextButton.LocalScriptNew
+
+AZY["d"] = Instance.new("LocalScript", AZY["a"]);
+
+AZY["d"]["Name"] = [[LocalScriptNew]];
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame.Title
+
+AZY["e"] = Instance.new("TextLabel", AZY["7"]);
+
+AZY["e"]["TextWrapped"] = true;
+
+AZY["e"]["TextScaled"] = true;
+
+AZY["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["e"]["TextSize"] = 45;
+
+AZY["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["e"]["Size"] = UDim2.new(0.624912440776825, 0, 0.12905988097190857, 0);
+
+AZY["e"]["Text"] = [[Welcome to Arceus X 3.0!]];
+
+AZY["e"]["Name"] = [[Title]];
+
+AZY["e"]["BackgroundTransparency"] = 1;
+
+AZY["e"]["Position"] = UDim2.new(0.1773233860731125, 0, 0.011320043355226517, 0);
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.ScrollingFrame.Title.UITextSizeConstraint
+
+AZY["f"] = Instance.new("UITextSizeConstraint", AZY["e"]);
+
+AZY["f"]["MaxTextSize"] = 45;
+
+-- StarterGui.DISCORD [ TN ] ARCES X.Welcome.Welcome.UICorner
+
+AZY["10"] = Instance.new("UICorner", AZY["5"]);
+
+AZY["10"]["CornerRadius"] = UDim.new(0, 40);
+
+-- StarterGui.Arceus XV3.AnimationIntro
+
+AZY["11"] = Instance.new("Folder", AZY["1"]);
+
+AZY["11"]["Name"] = [[AnimationIntro]];
+
+-- StarterGui.ArceusXV3.AnimationIntro.Background
+
+AZY["12"] = Instance.new("Frame", AZY["11"]);
+
+AZY["12"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+
+AZY["12"]["Size"] = UDim2.new(0, 1806, 0, 1604);
+
+AZY["12"]["Position"] = UDim2.new(-0.11024535447359085, 0, -0.16887417435646057, 0);
+
+AZY["12"]["Visible"] = false;
+
+AZY["12"]["Name"] = [[Background]];
+
+-- StarterGui.ArceusXV3.AnimationIntro.Frame
+
+AZY["13"] = Instance.new("Frame", AZY["11"]);
+
+AZY["13"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["13"]["Size"] = UDim2.new(0.03313452750444412, 0, 0.06622516363859177, 0);
+
+AZY["13"]["Position"] = UDim2.new(0.48293575644493103, 0, 0.4668874144554138, 0);
+
+AZY["13"]["Visible"] = false;
+
+-- StarterGui.ArceusXV3.AnimationIntro.Frame.UICorner
+
+AZY["14"] = Instance.new("UICorner", AZY["13"]);
+
+AZY["14"]["CornerRadius"] = UDim.new(1, 100);
+
+-- StarterGui.ArceusXV3.AnimationIntro.ImageLabel
+
+AZY["15"] = Instance.new("ImageLabel", AZY["11"]);
+
+AZY["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["15"]["ImageTransparency"] = 1;
+
+AZY["15"]["Visible"] = false;
+
+AZY["15"]["Image"] = [[rbxassetid://12564267060]];
+
+AZY["15"]["Size"] = UDim2.new(0.09526176750659943, 0, 0.27649006247520447, 0);
+
+AZY["15"]["BackgroundTransparency"] = 1;
+
+AZY["15"]["Position"] = UDim2.new(0.4423459470272064, 0, 0.36092716455459595, 0);
+
+-- StarterGui.ArceusXV3.AnimationIntro.NameLogo
+
+AZY["16"] = Instance.new("TextLabel", AZY["11"]);
+
+AZY["16"]["TextWrapped"] = true;
+
+AZY["16"]["TextScaled"] = true;
+
+AZY["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["16"]["TextTransparency"] = 1;
+
+AZY["16"]["TextSize"] = 50;
+
+AZY["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["16"]["Size"] = UDim2.new(0.13893571496009827, 0, 0.09271523356437683, 0);
+
+AZY["16"]["Text"] = [[Arceus X]];
+
+AZY["16"]["Name"] = [[NameLogo]];
+
+AZY["16"]["Visible"] = false;
+
+AZY["16"]["BackgroundTransparency"] = 1;
+
+AZY["16"]["Position"] = UDim2.new(0.3928734362125397, 0, 0.4523245096206665, 0);
+
+-- StarterGui.ArceusXV3.AnimationIntro.NameLogo.UITextSizeConstraint
+
+AZY["17"] = Instance.new("UITextSizeConstraint", AZY["16"]);
+
+AZY["17"]["MaxTextSize"] = 50;
+
+-- StarterGui.ArceusXV3.MainUI
+
+AZY["18"] = Instance.new("Folder", AZY["1"]);
+
+AZY["18"]["Name"] = [[MainUI]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame
+
+AZY["19"] = Instance.new("Frame", AZY["18"]);
+
+AZY["19"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["19"]["BackgroundTransparency"] = 0.44999998807907104;
+
+AZY["19"]["Size"] = UDim2.new(0, 459, 0, 276);
+
+AZY["19"]["Position"] = UDim2.new(0.1498919129371643, 0, 0.12086091935634613, 0);
+
+AZY["19"]["Visible"] = false;
+
+AZY["19"]["Name"] = [[MainFrame]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.UICorner
+
+AZY["1a"] = Instance.new("UICorner", AZY["19"]);
+
+AZY["1a"]["CornerRadius"] = UDim.new(0, 15);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel
+
+AZY["1b"] = Instance.new("Frame", AZY["19"]);
+
+AZY["1b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["1b"]["BackgroundTransparency"] = 0.550000011920929;
+
+AZY["1b"]["Size"] = UDim2.new(0.9417322874069214, 0, 0.11706378310918808, 0);
+
+AZY["1b"]["Position"] = UDim2.new(0.03099355846643448, 0, 0.0474083386361599, 0);
+
+AZY["1b"]["Name"] = [[Panel]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.UICorner
+
+AZY["1c"] = Instance.new("UICorner", AZY["1b"]);
+
+AZY["1c"]["CornerRadius"] = UDim.new(0, 14);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Logo
+
+AZY["1d"] = Instance.new("ImageLabel", AZY["1b"]);
+
+AZY["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["1d"]["Image"] = [[rbxassetid://12564267060]];
+
+AZY["1d"]["Size"] = UDim2.new(0.05029655620455742, 0, 0.9125484824180603, 0);
+
+AZY["1d"]["Name"] = [[Logo]];
+
+AZY["1d"]["BackgroundTransparency"] = 1;
+
+AZY["1d"]["Position"] = UDim2.new(0.4099465012550354, 0, 0.03155198320746422, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.TextLogo
+
+AZY["1e"] = Instance.new("TextLabel", AZY["1b"]);
+
+AZY["1e"]["TextWrapped"] = true;
+
+AZY["1e"]["TextScaled"] = true;
+
+AZY["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["1e"]["TextSize"] = 85;
+
+AZY["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["1e"]["Size"] = UDim2.new(0.1371736377477646, 0, 0.6307170391082764, 0);
+
+AZY["1e"]["Text"] = [[Arceus X]];
+
+AZY["1e"]["Name"] = [[TextLogo]];
+
+AZY["1e"]["BackgroundTransparency"] = 1;
+
+AZY["1e"]["Position"] = UDim2.new(0.4679349362850189, 0, 0.16660596430301666, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.TextLogo.UITextSizeConstraint
+
+AZY["1f"] = Instance.new("UITextSizeConstraint", AZY["1e"]);
+
+AZY["1f"]["MaxTextSize"] = 25;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Close
+
+AZY["20"] = Instance.new("ImageButton", AZY["1b"]);
+
+AZY["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["20"]["Image"] = [[rbxassetid://12566509152]];
+
+AZY["20"]["Size"] = UDim2.new(0.06670181453227997, 0, 1, 0);
+
+AZY["20"]["Name"] = [[Close]];
+
+AZY["20"]["Position"] = UDim2.new(0.9171510338783264, 0, 0, 0);
+
+AZY["20"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Close.LocalScript
+
+AZY["21"] = Instance.new("LocalScript", AZY["20"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Expand
+
+AZY["22"] = Instance.new("ImageButton", AZY["1b"]);
+
+AZY["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["22"]["Image"] = [[rbxassetid://12566545357]];
+
+AZY["22"]["Size"] = UDim2.new(0.06901533156633377, 0, 1, 0);
+
+AZY["22"]["Name"] = [[Expand]];
+
+AZY["22"]["Position"] = UDim2.new(0.8481356501579285, 0, -0.024522678926587105, 0);
+
+AZY["22"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Expand.LocalScript
+
+AZY["23"] = Instance.new("LocalScript", AZY["22"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.TimeLeft
+
+AZY["24"] = Instance.new("TextLabel", AZY["1b"]);
+
+AZY["24"]["TextWrapped"] = true;
+
+AZY["24"]["TextScaled"] = true;
+
+AZY["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+
+AZY["24"]["TextSize"] = 35;
+
+AZY["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["24"]["Size"] = UDim2.new(0.13600000739097595, 0, 0.38600000739097595, 0);
+
+AZY["24"]["Text"] = [[24h 00m left]];
+
+AZY["24"]["Name"] = [[TimeLeft]];
+
+AZY["24"]["BackgroundTransparency"] = 1;
+
+AZY["24"]["Position"] = UDim2.new(0.07365596294403076, 0, 0.28405851125717163, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.TimeLeft.LocalScript
+
+AZY["25"] = Instance.new("LocalScript", AZY["24"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Restore
+
+AZY["26"] = Instance.new("TextButton", AZY["1b"]);
+
+AZY["26"]["TextWrapped"] = true;
+
+AZY["26"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["26"]["TextSize"] = 12;
+
+AZY["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["26"]["Size"] = UDim2.new(0.10400000214576721, 0, 0.503000020980835, 0);
+
+AZY["26"]["Name"] = [[Restore]];
+
+AZY["26"]["Text"] = [[Restore]];
+
+AZY["26"]["Position"] = UDim2.new(0.21463949978351593, 0, 0.22850705683231354, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Restore.UICorner
+
+AZY["27"] = Instance.new("UICorner", AZY["26"]);
+
+AZY["27"]["CornerRadius"] = UDim.new(0, 6);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Restore.LocalScript
+
+AZY["28"] = Instance.new("LocalScript", AZY["26"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Icon
+
+AZY["29"] = Instance.new("ImageButton", AZY["1b"]);
+
+AZY["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["29"]["Image"] = [[rbxassetid://12584810787]];
+
+AZY["29"]["Size"] = UDim2.new(0.05783621221780777, 0, 0.7737637162208557, 0);
+
+AZY["29"]["Name"] = [[Icon]];
+
+AZY["29"]["Position"] = UDim2.new(0.01600000075995922, 0, 0.09300000220537186, 0);
+
+AZY["29"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Panel.Icon.LocalScript
+
+AZY["2a"] = Instance.new("LocalScript", AZY["29"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs
+
+AZY["2b"] = Instance.new("Folder", AZY["19"]);
+
+AZY["2b"]["Name"] = [[Tabs]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home
+
+AZY["2c"] = Instance.new("Frame", AZY["2b"]);
+
+AZY["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["2c"]["BackgroundTransparency"] = 1;
+
+AZY["2c"]["Size"] = UDim2.new(0.831805408000946, 0, 0.7336452603340149, 0);
+
+AZY["2c"]["Position"] = UDim2.new(0.1409204602241516, 0, 0.18711426854133606, 0);
+
+AZY["2c"]["Name"] = [[Home]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.UserPage
+
+AZY["2d"] = Instance.new("Frame", AZY["2c"]);
+
+AZY["2d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["2d"]["BackgroundTransparency"] = 0.550000011920929;
+
+AZY["2d"]["Size"] = UDim2.new(0.37270405888557434, 0, 0.2492256611585617, 0);
+
+AZY["2d"]["Position"] = UDim2.new(-0.0007835610886104405, 0, 0.025084324181079865, 0);
+
+AZY["2d"]["Name"] = [[UserPage]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.UserPage.UICorner
+
+AZY["2e"] = Instance.new("UICorner", AZY["2d"]);
+
+AZY["2e"]["CornerRadius"] = UDim.new(0, 15);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.UserPage.ImageLabel
+
+AZY["2f"] = Instance.new("ImageLabel", AZY["2d"]);
+
+AZY["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["2f"]["Image"] = [[rbxassetid://12566434374]];
+
+AZY["2f"]["Size"] = UDim2.new(0.3031076192855835, 0, 0.8659517168998718, 0);
+
+AZY["2f"]["BackgroundTransparency"] = 1;
+
+AZY["2f"]["Position"] = UDim2.new(0.22370131313800812, 0, 0.0670241266489029, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.UserPage.TextLabel
+
+AZY["30"] = Instance.new("TextLabel", AZY["2d"]);
+
+AZY["30"]["TextWrapped"] = true;
+
+AZY["30"]["TextScaled"] = true;
+
+AZY["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["30"]["TextSize"] = 25;
+
+AZY["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["30"]["Size"] = UDim2.new(0.20524734258651733, 0, 0.3535553812980652, 0);
+
+AZY["30"]["Text"] = [[Hi,]];
+
+AZY["30"]["BackgroundTransparency"] = 1;
+
+AZY["30"]["Position"] = UDim2.new(0.5262826681137085, 0, 0.14745301008224487, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.UserPage.TextLabel
+
+AZY["31"] = Instance.new("TextLabel", AZY["2d"]);
+
+AZY["31"]["TextWrapped"] = true;
+
+AZY["31"]["TextScaled"] = true;
+
+AZY["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["31"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+
+AZY["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["31"]["TextSize"] = 25;
+
+AZY["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["31"]["Size"] = UDim2.new(0.3468869626522064, 0, 0.3007456660270691, 0);
+
+AZY["31"]["Text"] = [[User]];
+
+AZY["31"]["BackgroundTransparency"] = 1;
+
+AZY["31"]["Position"] = UDim2.new(0.5669999122619629, 0, 0.5350000262260437, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.UserPage.TextLabel.UITextSizeConstraint
+
+AZY["32"] = Instance.new("UITextSizeConstraint", AZY["31"]);
+
+AZY["32"]["MaxTextSize"] = 25;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.UserPage.TextLabel.LocalScript
+
+AZY["33"] = Instance.new("LocalScript", AZY["31"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage
+
+AZY["34"] = Instance.new("Frame", AZY["2c"]);
+
+AZY["34"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["34"]["BackgroundTransparency"] = 0.550000011920929;
+
+AZY["34"]["Size"] = UDim2.new(0.374349445104599, 0, 0.7526744604110718, 0);
+
+AZY["34"]["Position"] = UDim2.new(-0.002428855048492551, 0, 0.3016669452190399, 0);
+
+AZY["34"]["Name"] = [[KeySystemPage]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.UICorner
+
+AZY["35"] = Instance.new("UICorner", AZY["34"]);
+
+AZY["35"]["CornerRadius"] = UDim.new(0, 15);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.TextLabel
+
+AZY["36"] = Instance.new("TextLabel", AZY["34"]);
+
+AZY["36"]["TextWrapped"] = true;
+
+AZY["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["36"]["TextSize"] = 16;
+
+AZY["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["36"]["Size"] = UDim2.new(0.8114322423934937, 0, 0.15531843900680542, 0);
+
+AZY["36"]["Text"] = [[Key System Status]];
+
+AZY["36"]["BackgroundTransparency"] = 1;
+
+AZY["36"]["Position"] = UDim2.new(0.05482717230916023, 0, 0.06104206293821335, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.TextLabel
+
+AZY["37"] = Instance.new("TextLabel", AZY["34"]);
+
+AZY["37"]["TextWrapped"] = true;
+
+AZY["37"]["TextScaled"] = true;
+
+AZY["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["37"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+
+AZY["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["37"]["TextSize"] = 35;
+
+AZY["37"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+
+AZY["37"]["Size"] = UDim2.new(0.30206844210624695, 0, 0.09149397909641266, 0);
+
+AZY["37"]["Text"] = [[Online]];
+
+AZY["37"]["BackgroundTransparency"] = 1;
+
+AZY["37"]["Position"] = UDim2.new(0.08498311042785645, 0, 0.1731228232383728, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.TextLabel
+
+AZY["38"] = Instance.new("TextLabel", AZY["34"]);
+
+AZY["38"]["TextWrapped"] = true;
+
+AZY["38"]["TextScaled"] = true;
+
+AZY["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["38"]["TextSize"] = 35;
+
+AZY["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["38"]["Size"] = UDim2.new(0.423105388879776, 0, 0.0994054526090622, 0);
+
+AZY["38"]["Text"] = [[Expires In:]];
+
+AZY["38"]["BackgroundTransparency"] = 1;
+
+AZY["38"]["Position"] = UDim2.new(0.054827168583869934, 0, 0.31500908732414246, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.TimeLeft
+
+AZY["39"] = Instance.new("TextLabel", AZY["34"]);
+
+AZY["39"]["TextWrapped"] = true;
+
+AZY["39"]["TextScaled"] = true;
+
+AZY["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["39"]["TextSize"] = 35;
+
+AZY["39"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+
+AZY["39"]["Size"] = UDim2.new(0.30206844210624695, 0, 0.0994054526090622, 0);
+
+AZY["39"]["Text"] = [[24h 00m]];
+
+AZY["39"]["Name"] = [[TimeLeft]];
+
+AZY["39"]["BackgroundTransparency"] = 1;
+
+AZY["39"]["Position"] = UDim2.new(0.49440309405326843, 0, 0.31500908732414246, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.TimeLeft.LocalScript
+
+AZY["3a"] = Instance.new("LocalScript", AZY["39"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.Bar
+
+AZY["3b"] = Instance.new("Frame", AZY["34"]);
+
+AZY["3b"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+
+AZY["3b"]["Size"] = UDim2.new(0.8291789293289185, 0, 0.07132068276405334, 0);
+
+AZY["3b"]["Position"] = UDim2.new(0.05709991604089737, 0, 0.44679027795791626, 0);
+
+AZY["3b"]["Name"] = [[Bar]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.Bar.UICorner
+
+AZY["3c"] = Instance.new("UICorner", AZY["3b"]);
+
+AZY["3c"]["CornerRadius"] = UDim.new(0, 4);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.Bar.TextLabel
+
+AZY["3d"] = Instance.new("TextLabel", AZY["3b"]);
+
+AZY["3d"]["TextWrapped"] = true;
+
+AZY["3d"]["TextScaled"] = true;
+
+AZY["3d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["3d"]["TextTransparency"] = 0.6000000238418579;
+
+AZY["3d"]["TextSize"] = 35;
+
+AZY["3d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["3d"]["Size"] = UDim2.new(0.2189580649137497, 0, 0.9389510154724121, 0);
+
+AZY["3d"]["Text"] = [[100%]];
+
+AZY["3d"]["BackgroundTransparency"] = 1;
+
+AZY["3d"]["Position"] = UDim2.new(0.7810419201850891, 0, 0.061042893677949905, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.TextLabel
+
+AZY["3e"] = Instance.new("TextLabel", AZY["34"]);
+
+AZY["3e"]["TextWrapped"] = true;
+
+AZY["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["3e"]["TextSize"] = 12;
+
+AZY["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["3e"]["Size"] = UDim2.new(0.5709924697875977, 0, 0.11561357975006104, 0);
+
+AZY["3e"]["Text"] = [[Last activation:]];
+
+AZY["3e"]["BackgroundTransparency"] = 1;
+
+AZY["3e"]["Position"] = UDim2.new(0.05010330677032471, 0, 0.5460530519485474, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.Time
+
+AZY["3f"] = Instance.new("TextLabel", AZY["34"]);
+
+AZY["3f"]["TextWrapped"] = true;
+
+AZY["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["3f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+
+AZY["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["3f"]["TextSize"] = 12;
+
+AZY["3f"]["TextColor3"] = Color3.fromRGB(178, 178, 178);
+
+AZY["3f"]["Size"] = UDim2.new(0.6227233409881592, 0, 0.09644854068756104, 0);
+
+AZY["3f"]["Text"] = [[Today, HH:MM AM]];
+
+AZY["3f"]["Name"] = [[Time]];
+
+AZY["3f"]["BackgroundTransparency"] = 1;
+
+AZY["3f"]["Position"] = UDim2.new(0.08199998736381531, 0, 0.6469999551773071, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.Time.LocalScript
+
+AZY["40"] = Instance.new("LocalScript", AZY["3f"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.Restore
+
+AZY["41"] = Instance.new("TextButton", AZY["34"]);
+
+AZY["41"]["TextWrapped"] = true;
+
+AZY["41"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["41"]["TextSize"] = 15;
+
+AZY["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["41"]["Size"] = UDim2.new(0.7855679988861084, 0, 0.17807699739933014, 0);
+
+AZY["41"]["Name"] = [[Restore]];
+
+AZY["41"]["Text"] = [[Restore]];
+
+AZY["41"]["Position"] = UDim2.new(0.10590747743844986, 0, 0.7775270342826843, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.Restore.UICorner
+
+AZY["42"] = Instance.new("UICorner", AZY["41"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.KeySystemPage.Restore.LocalScript
+
+AZY["43"] = Instance.new("LocalScript", AZY["41"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage
+
+AZY["44"] = Instance.new("Frame", AZY["2c"]);
+
+AZY["44"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["44"]["BackgroundTransparency"] = 0.550000011920929;
+
+AZY["44"]["Size"] = UDim2.new(0.6116291880607605, 0, 1.0292569398880005, 0);
+
+AZY["44"]["Position"] = UDim2.new(0.3883708119392395, 0, 0.025084195658564568, 0);
+
+AZY["44"]["Name"] = [[HaxPage]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.UICorner
+
+AZY["45"] = Instance.new("UICorner", AZY["44"]);
+
+AZY["45"]["CornerRadius"] = UDim.new(0, 15);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.TextLabel
+
+AZY["46"] = Instance.new("TextLabel", AZY["44"]);
+
+AZY["46"]["TextWrapped"] = true;
+
+AZY["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["46"]["TextSize"] = 18;
+
+AZY["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["46"]["Size"] = UDim2.new(0.3717169165611267, 0, 0.10439325869083405, 0);
+
+AZY["46"]["Text"] = [[Quick Hacks]];
+
+AZY["46"]["BackgroundTransparency"] = 1;
+
+AZY["46"]["Position"] = UDim2.new(0.01899999938905239, 0, 0.03400000184774399, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Grav
+
+AZY["47"] = Instance.new("BoolValue", AZY["44"]);
+
+AZY["47"]["Name"] = [[Grav]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts
+
+AZY["48"] = Instance.new("Folder", AZY["44"]);
+
+AZY["48"]["Name"] = [[Scripts]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Aimbot
+
+AZY["49"] = Instance.new("TextButton", AZY["48"]);
+
+AZY["49"]["TextWrapped"] = true;
+
+AZY["49"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["49"]["TextSize"] = 11;
+
+AZY["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["49"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["49"]["Size"] = UDim2.new(0.2588447332382202, 0, 0.0958060473203659, 0);
+
+AZY["49"]["Name"] = [[Aimbot]];
+
+AZY["49"]["Text"] = [[AimBot]];
+
+AZY["49"]["Position"] = UDim2.new(0.04600000008940697, 0, 0.5989999771118164, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Aimbot.UICorner
+
+AZY["4a"] = Instance.new("UICorner", AZY["49"]);
+
+AZY["4a"]["CornerRadius"] = UDim.new(0, 5);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Aimbot.LocalScript
+
+AZY["4b"] = Instance.new("LocalScript", AZY["49"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Btools
+
+AZY["4c"] = Instance.new("TextButton", AZY["48"]);
+
+AZY["4c"]["TextWrapped"] = true;
+
+AZY["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["4c"]["TextSize"] = 11;
+
+AZY["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["4c"]["Size"] = UDim2.new(0.2588447332382202, 0, 0.0958060473203659, 0);
+
+AZY["4c"]["Name"] = [[Btools]];
+
+AZY["4c"]["Text"] = [[Btools]];
+
+AZY["4c"]["Position"] = UDim2.new(0.04600000008940697, 0, 0.4830000102519989, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Btools.UICorner
+
+AZY["4d"] = Instance.new("UICorner", AZY["4c"]);
+
+AZY["4d"]["CornerRadius"] = UDim.new(0, 5);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Btools.LocalScript
+
+AZY["4e"] = Instance.new("LocalScript", AZY["4c"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Dex
+
+AZY["4f"] = Instance.new("TextButton", AZY["48"]);
+
+AZY["4f"]["TextWrapped"] = true;
+
+AZY["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["4f"]["TextSize"] = 11;
+
+AZY["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["4f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["4f"]["Size"] = UDim2.new(0.2588447332382202, 0, 0.0958060473203659, 0);
+
+AZY["4f"]["Name"] = [[Dex]];
+
+AZY["4f"]["Text"] = [[DEX Explorer]];
+
+AZY["4f"]["Position"] = UDim2.new(0.04600000008940697, 0, 0.2564218044281006, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Dex.UICorner
+
+AZY["50"] = Instance.new("UICorner", AZY["4f"]);
+
+AZY["50"]["CornerRadius"] = UDim.new(0, 5);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Dex.LocalScript
+
+AZY["51"] = Instance.new("LocalScript", AZY["4f"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.FatesESP
+
+AZY["52"] = Instance.new("TextButton", AZY["48"]);
+
+AZY["52"]["TextWrapped"] = true;
+
+AZY["52"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["52"]["TextSize"] = 11;
+
+AZY["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["52"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["52"]["Size"] = UDim2.new(0.2588447332382202, 0, 0.0958060473203659, 0);
+
+AZY["52"]["Name"] = [[FatesESP]];
+
+AZY["52"]["Text"] = [[Fates ESP]];
+
+AZY["52"]["Position"] = UDim2.new(0.04600000008940697, 0, 0.3709999918937683, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.FatesESP.UICorner
+
+AZY["53"] = Instance.new("UICorner", AZY["52"]);
+
+AZY["53"]["CornerRadius"] = UDim.new(0, 5);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.FatesESP.LocalScript
+
+AZY["54"] = Instance.new("LocalScript", AZY["52"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Fly
+
+AZY["55"] = Instance.new("TextButton", AZY["48"]);
+
+AZY["55"]["TextWrapped"] = true;
+
+AZY["55"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["55"]["TextSize"] = 11;
+
+AZY["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["55"]["Size"] = UDim2.new(0.2588447332382202, 0, 0.0958060473203659, 0);
+
+AZY["55"]["Name"] = [[Fly]];
+
+AZY["55"]["Text"] = [[Fly]];
+
+AZY["55"]["Position"] = UDim2.new(0.04600000008940697, 0, 0.7070000171661377, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Fly.UICorner
+
+AZY["56"] = Instance.new("UICorner", AZY["55"]);
+
+AZY["56"]["CornerRadius"] = UDim.new(0, 5);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.Fly.LocalScript
+
+AZY["57"] = Instance.new("LocalScript", AZY["55"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.IY
+
+AZY["58"] = Instance.new("TextButton", AZY["48"]);
+
+AZY["58"]["TextWrapped"] = true;
+
+AZY["58"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["58"]["TextSize"] = 11;
+
+AZY["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["58"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["58"]["Size"] = UDim2.new(0.2588447332382202, 0, 0.0958060473203659, 0);
+
+AZY["58"]["Name"] = [[IY]];
+
+AZY["58"]["Text"] = [[Infinite Yield]];
+
+AZY["58"]["Position"] = UDim2.new(0.04595530033111572, 0, 0.13954126834869385, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.IY.UICorner
+
+AZY["59"] = Instance.new("UICorner", AZY["58"]);
+
+AZY["59"]["CornerRadius"] = UDim.new(0, 5);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.IY.LocalScript
+
+AZY["5a"] = Instance.new("LocalScript", AZY["58"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.PwnHub
+
+AZY["5b"] = Instance.new("TextButton", AZY["48"]);
+
+AZY["5b"]["TextWrapped"] = true;
+
+AZY["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+
+AZY["5b"]["TextSize"] = 11;
+
+AZY["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["5b"]["Size"] = UDim2.new(0.2588447332382202, 0, 0.0958060473203659, 0);
+
+AZY["5b"]["Name"] = [[PwnHub]];
+
+AZY["5b"]["Text"] = [[Pwner Hub]];
+
+AZY["5b"]["Position"] = UDim2.new(0.04600000008940697, 0, 0.8209999799728394, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.PwnHub.UICorner
+
+AZY["5c"] = Instance.new("UICorner", AZY["5b"]);
+
+AZY["5c"]["CornerRadius"] = UDim.new(0, 5);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Scripts.PwnHub.LocalScript
+
+AZY["5d"] = Instance.new("LocalScript", AZY["5b"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.TextGrav
+
+AZY["5e"] = Instance.new("TextLabel", AZY["44"]);
+
+AZY["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["5e"]["TextSize"] = 12;
+
+AZY["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["5e"]["Size"] = UDim2.new(0, 50, 0, 11);
+
+AZY["5e"]["Text"] = [[Gravity]];
+
+AZY["5e"]["Name"] = [[TextGrav]];
+
+AZY["5e"]["BackgroundTransparency"] = 1;
+
+AZY["5e"]["Position"] = UDim2.new(0.3269999921321869, 0, 0.8930000066757202, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.TextWs
+
+AZY["5f"] = Instance.new("TextLabel", AZY["44"]);
+
+AZY["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["5f"]["TextSize"] = 12;
+
+AZY["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["5f"]["Size"] = UDim2.new(0, 50, 0, 11);
+
+AZY["5f"]["Text"] = [[Speed]];
+
+AZY["5f"]["Name"] = [[TextWs]];
+
+AZY["5f"]["BackgroundTransparency"] = 1;
+
+AZY["5f"]["Position"] = UDim2.new(0.5411151647567749, 0, 0.8930000066757202, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.TextJp
+
+AZY["60"] = Instance.new("TextLabel", AZY["44"]);
+
+AZY["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["60"]["TextSize"] = 12;
+
+AZY["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["60"]["Size"] = UDim2.new(0, 50, 0, 11);
+
+AZY["60"]["Text"] = [[Jump]];
+
+AZY["60"]["Name"] = [[TextJp]];
+
+AZY["60"]["BackgroundTransparency"] = 1;
+
+AZY["60"]["Position"] = UDim2.new(0.7466657161712646, 0, 0.8930000066757202, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Ws
+
+AZY["61"] = Instance.new("BoolValue", AZY["44"]);
+
+AZY["61"]["Name"] = [[Ws]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.Jp
+
+AZY["62"] = Instance.new("BoolValue", AZY["44"]);
+
+AZY["62"]["Name"] = [[Jp]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleGrav
+
+AZY["63"] = Instance.new("TextButton", AZY["44"]);
+
+AZY["63"]["BackgroundColor3"] = Color3.fromRGB(146, 0, 0);
+
+AZY["63"]["TextSize"] = 14;
+
+AZY["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+
+AZY["63"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["63"]["Size"] = UDim2.new(0, 15, 0, 15);
+
+AZY["63"]["Name"] = [[ToggleGrav]];
+
+AZY["63"]["Text"] = [[]];
+
+AZY["63"]["Position"] = UDim2.new(0.40253645181655884, 0, 0.801304280757904, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleGrav.UICorner
+
+AZY["64"] = Instance.new("UICorner", AZY["63"]);
+
+AZY["64"]["CornerRadius"] = UDim.new(100, 100);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleGrav.LocalScript
+
+AZY["65"] = Instance.new("LocalScript", AZY["63"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleWs
+
+AZY["66"] = Instance.new("TextButton", AZY["44"]);
+
+AZY["66"]["BackgroundColor3"] = Color3.fromRGB(146, 0, 0);
+
+AZY["66"]["TextSize"] = 14;
+
+AZY["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+
+AZY["66"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["66"]["Size"] = UDim2.new(0, 15, 0, 15);
+
+AZY["66"]["Name"] = [[ToggleWs]];
+
+AZY["66"]["Text"] = [[]];
+
+AZY["66"]["Position"] = UDim2.new(0.6166515946388245, 0, 0.801304280757904, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleWs.UICorner
+
+AZY["67"] = Instance.new("UICorner", AZY["66"]);
+
+AZY["67"]["CornerRadius"] = UDim.new(100, 100);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleWs.LocalScript
+
+AZY["68"] = Instance.new("LocalScript", AZY["66"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleJp
+
+AZY["69"] = Instance.new("TextButton", AZY["44"]);
+
+AZY["69"]["BackgroundColor3"] = Color3.fromRGB(146, 0, 0);
+
+AZY["69"]["TextSize"] = 14;
+
+AZY["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+
+AZY["69"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+
+AZY["69"]["Size"] = UDim2.new(0, 15, 0, 15);
+
+AZY["69"]["Name"] = [[ToggleJp]];
+
+AZY["69"]["Text"] = [[]];
+
+AZY["69"]["Position"] = UDim2.new(0.8222021460533142, 0, 0.801304280757904, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleJp.UICorner
+
+AZY["6a"] = Instance.new("UICorner", AZY["69"]);
+
+AZY["6a"]["CornerRadius"] = UDim.new(100, 100);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.ToggleJp.LocalScript
+
+AZY["6b"] = Instance.new("LocalScript", AZY["69"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS
+
+AZY["6c"] = Instance.new("ImageButton", AZY["44"]);
+
+AZY["6c"]["Active"] = false;
+
+AZY["6c"]["BorderSizePixel"] = 0;
+
+AZY["6c"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["6c"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["6c"]["SliceScale"] = 0.11999999731779099;
+
+AZY["6c"]["ImageTransparency"] = 1;
+
+AZY["6c"]["BackgroundColor3"] = Color3.fromRGB(22, 22, 22);
+
+AZY["6c"]["ImageColor3"] = Color3.fromRGB(32, 32, 32);
+
+AZY["6c"]["Selectable"] = false;
+
+AZY["6c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+
+AZY["6c"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["6c"]["Size"] = UDim2.new(0, 119, 0, 31);
+
+AZY["6c"]["Name"] = [[JpS]];
+
+AZY["6c"]["Rotation"] = -90;
+
+AZY["6c"]["Position"] = UDim2.new(0.8600000143051147, 0, 0.4399999976158142, 0);
+
+AZY["6c"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS.SliderButton
+
+AZY["6d"] = Instance.new("ImageLabel", AZY["6c"]);
+
+AZY["6d"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["6d"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["6d"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+
+AZY["6d"]["ImageColor3"] = Color3.fromRGB(146, 0, 0);
+
+AZY["6d"]["SliceScale"] = 0.11999999731779099;
+
+AZY["6d"]["Selectable"] = true;
+
+AZY["6d"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["6d"]["Size"] = UDim2.new(0, 25, 1, 0);
+
+AZY["6d"]["Active"] = true;
+
+AZY["6d"]["Name"] = [[SliderButton]];
+
+AZY["6d"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS.SliderButton.LocalScript
+
+AZY["6e"] = Instance.new("LocalScript", AZY["6d"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS.Border
+
+AZY["6f"] = Instance.new("ImageLabel", AZY["6c"]);
+
+AZY["6f"]["ZIndex"] = -1;
+
+AZY["6f"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["6f"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["6f"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+
+AZY["6f"]["ImageColor3"] = Color3.fromRGB(71, 71, 71);
+
+AZY["6f"]["SliceScale"] = 0.23999999463558197;
+
+AZY["6f"]["ImageTransparency"] = 1;
+
+AZY["6f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+
+AZY["6f"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["6f"]["Size"] = UDim2.new(1, 12, 1, 12);
+
+AZY["6f"]["Name"] = [[Border]];
+
+AZY["6f"]["BackgroundTransparency"] = 0.6000000238418579;
+
+AZY["6f"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS.Border.UICorner
+
+AZY["70"] = Instance.new("UICorner", AZY["6f"]);
+
+AZY["70"]["CornerRadius"] = UDim.new(0, 12);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS.StripedPattern
+
+AZY["71"] = Instance.new("ImageLabel", AZY["6c"]);
+
+AZY["71"]["BorderSizePixel"] = 0;
+
+AZY["71"]["ScaleType"] = Enum.ScaleType.Tile;
+
+AZY["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["71"]["ImageColor3"] = Color3.fromRGB(32, 32, 32);
+
+AZY["71"]["ImageTransparency"] = 1;
+
+AZY["71"]["AnchorPoint"] = Vector2.new(0.5, 0);
+
+AZY["71"]["Image"] = [[rbxassetid://4925116997]];
+
+AZY["71"]["TileSize"] = UDim2.new(0, 25, 1, 0);
+
+AZY["71"]["Size"] = UDim2.new(1, -25, 1, 0);
+
+AZY["71"]["Name"] = [[StripedPattern]];
+
+AZY["71"]["BackgroundTransparency"] = 1;
+
+AZY["71"]["Position"] = UDim2.new(0.5, 0, 0, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS.StripedPattern.UIGradient
+
+AZY["72"] = Instance.new("UIGradient", AZY["71"]);
+
+AZY["72"]["Rotation"] = 90;
+
+AZY["72"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS.ImageLabel
+
+AZY["73"] = Instance.new("ImageLabel", AZY["6c"]);
+
+AZY["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["73"]["Image"] = [[rbxassetid://12582573514]];
+
+AZY["73"]["Size"] = UDim2.new(0, 35, 0, 35);
+
+AZY["73"]["Rotation"] = 90;
+
+AZY["73"]["BackgroundTransparency"] = 1;
+
+AZY["73"]["Position"] = UDim2.new(-0.017000000923871994, 0, -0.10000000149011612, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.JpS.TextLabel
+
+AZY["74"] = Instance.new("TextBox", AZY["6c"]);
+
+AZY["74"]["ZIndex"] = 2;
+
+AZY["74"]["TextSize"] = 13;
+
+AZY["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["74"]["AnchorPoint"] = Vector2.new(1, 0);
+
+AZY["74"]["BackgroundTransparency"] = 1;
+
+AZY["74"]["Size"] = UDim2.new(0, 50, 1, 0);
+
+AZY["74"]["Text"] = [[0%]];
+
+AZY["74"]["Position"] = UDim2.new(0, 137, 0, 0);
+
+AZY["74"]["Rotation"] = 90;
+
+AZY["74"]["Name"] = [[TextLabel]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS
+
+AZY["75"] = Instance.new("ImageButton", AZY["44"]);
+
+AZY["75"]["Active"] = false;
+
+AZY["75"]["BorderSizePixel"] = 0;
+
+AZY["75"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["75"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["75"]["SliceScale"] = 0.11999999731779099;
+
+AZY["75"]["ImageTransparency"] = 1;
+
+AZY["75"]["BackgroundColor3"] = Color3.fromRGB(22, 22, 22);
+
+AZY["75"]["ImageColor3"] = Color3.fromRGB(32, 32, 32);
+
+AZY["75"]["Selectable"] = false;
+
+AZY["75"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+
+AZY["75"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["75"]["Size"] = UDim2.new(0, 119, 0, 31);
+
+AZY["75"]["Name"] = [[WsS]];
+
+AZY["75"]["Rotation"] = -90;
+
+AZY["75"]["Position"] = UDim2.new(0.6499999761581421, 0, 0.4399999976158142, 0);
+
+AZY["75"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS.SliderButton
+
+AZY["76"] = Instance.new("ImageLabel", AZY["75"]);
+
+AZY["76"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["76"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["76"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+
+AZY["76"]["ImageColor3"] = Color3.fromRGB(146, 0, 0);
+
+AZY["76"]["SliceScale"] = 0.11999999731779099;
+
+AZY["76"]["Selectable"] = true;
+
+AZY["76"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["76"]["Size"] = UDim2.new(0, 25, 1, 0);
+
+AZY["76"]["Active"] = true;
+
+AZY["76"]["Name"] = [[SliderButton]];
+
+AZY["76"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS.SliderButton.LocalScript
+
+AZY["77"] = Instance.new("LocalScript", AZY["76"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS.Border
+
+AZY["78"] = Instance.new("ImageLabel", AZY["75"]);
+
+AZY["78"]["ZIndex"] = -1;
+
+AZY["78"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["78"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["78"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+
+AZY["78"]["ImageColor3"] = Color3.fromRGB(71, 71, 71);
+
+AZY["78"]["SliceScale"] = 0.23999999463558197;
+
+AZY["78"]["ImageTransparency"] = 1;
+
+AZY["78"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+
+AZY["78"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["78"]["Size"] = UDim2.new(1, 12, 1, 12);
+
+AZY["78"]["Name"] = [[Border]];
+
+AZY["78"]["BackgroundTransparency"] = 0.6000000238418579;
+
+AZY["78"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS.Border.UICorner
+
+AZY["79"] = Instance.new("UICorner", AZY["78"]);
+
+AZY["79"]["CornerRadius"] = UDim.new(0, 12);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS.StripedPattern
+
+AZY["7a"] = Instance.new("ImageLabel", AZY["75"]);
+
+AZY["7a"]["BorderSizePixel"] = 0;
+
+AZY["7a"]["ScaleType"] = Enum.ScaleType.Tile;
+
+AZY["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["7a"]["ImageColor3"] = Color3.fromRGB(32, 32, 32);
+
+AZY["7a"]["ImageTransparency"] = 1;
+
+AZY["7a"]["AnchorPoint"] = Vector2.new(0.5, 0);
+
+AZY["7a"]["Image"] = [[rbxassetid://4925116997]];
+
+AZY["7a"]["TileSize"] = UDim2.new(0, 25, 1, 0);
+
+AZY["7a"]["Size"] = UDim2.new(1, -25, 1, 0);
+
+AZY["7a"]["Name"] = [[StripedPattern]];
+
+AZY["7a"]["BackgroundTransparency"] = 1;
+
+AZY["7a"]["Position"] = UDim2.new(0.5, 0, 0, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS.StripedPattern.UIGradient
+
+AZY["7b"] = Instance.new("UIGradient", AZY["7a"]);
+
+AZY["7b"]["Rotation"] = 90;
+
+AZY["7b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS.ImageLabel
+
+AZY["7c"] = Instance.new("ImageLabel", AZY["75"]);
+
+AZY["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["7c"]["Image"] = [[rbxassetid://12572149271]];
+
+AZY["7c"]["Size"] = UDim2.new(0, 35, 0, 35);
+
+AZY["7c"]["Rotation"] = 90;
+
+AZY["7c"]["BackgroundTransparency"] = 1;
+
+AZY["7c"]["Position"] = UDim2.new(-0.017000000923871994, 0, -0.10000000149011612, 0);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.WsS.TextLabel
+
+AZY["7d"] = Instance.new("TextBox", AZY["75"]);
+
+AZY["7d"]["ZIndex"] = 2;
+
+AZY["7d"]["TextSize"] = 13;
+
+AZY["7d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+
+AZY["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+
+AZY["7d"]["AnchorPoint"] = Vector2.new(1, 0);
+
+AZY["7d"]["BackgroundTransparency"] = 1;
+
+AZY["7d"]["Size"] = UDim2.new(0, 50, 1, 0);
+
+AZY["7d"]["Text"] = [[0%]];
+
+AZY["7d"]["Position"] = UDim2.new(0, 137, 0, 0);
+
+AZY["7d"]["Rotation"] = 90;
+
+AZY["7d"]["Name"] = [[TextLabel]];
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.GravS
+
+AZY["7e"] = Instance.new("ImageButton", AZY["44"]);
+
+AZY["7e"]["Active"] = false;
+
+AZY["7e"]["BorderSizePixel"] = 0;
+
+AZY["7e"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["7e"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["7e"]["SliceScale"] = 0.11999999731779099;
+
+AZY["7e"]["ImageTransparency"] = 1;
+
+AZY["7e"]["BackgroundColor3"] = Color3.fromRGB(22, 22, 22);
+
+AZY["7e"]["ImageColor3"] = Color3.fromRGB(32, 32, 32);
+
+AZY["7e"]["Selectable"] = false;
+
+AZY["7e"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+
+AZY["7e"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["7e"]["Size"] = UDim2.new(0, 119, 0, 31);
+
+AZY["7e"]["Name"] = [[GravS]];
+
+AZY["7e"]["Rotation"] = -90;
+
+AZY["7e"]["Position"] = UDim2.new(0.4359999895095825, 0, 0.4399999976158142, 0);
+
+AZY["7e"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.GravS.SliderButton
+
+AZY["7f"] = Instance.new("ImageLabel", AZY["7e"]);
+
+AZY["7f"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["7f"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["7f"]["BackgroundColor3"] = Color3.fromRGB(71, 71, 71);
+
+AZY["7f"]["ImageColor3"] = Color3.fromRGB(146, 0, 0);
+
+AZY["7f"]["SliceScale"] = 0.11999999731779099;
+
+AZY["7f"]["Selectable"] = true;
+
+AZY["7f"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["7f"]["Size"] = UDim2.new(0, 25, 1, 0);
+
+AZY["7f"]["Active"] = true;
+
+AZY["7f"]["Name"] = [[SliderButton]];
+
+AZY["7f"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.GravS.SliderButton.LocalScript
+
+AZY["80"] = Instance.new("LocalScript", AZY["7f"]);
+
+-- StarterGui.ArceusXV3.MainUI.MainFrame.Tabs.Home.HaxPage.GravS.Border
+
+AZY["81"] = Instance.new("ImageLabel", AZY["7e"]);
+
+AZY["81"]["ZIndex"] = -1;
+
+AZY["81"]["SliceCenter"] = Rect.new(100, 100, 100, 100);
+
+AZY["81"]["ScaleType"] = Enum.ScaleType.Slice;
+
+AZY["81"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62);
+
+AZY["81"]["ImageColor3"] = Color3.fromRGB(71, 71, 71);
+
+AZY["81"]["SliceScale"] = 0.23999999463558197;
+
+AZY["81"]["ImageTransparency"] = 1;
+
+AZY["81"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+
+AZY["81"]["Image"] = [[rbxassetid://3570695787]];
+
+AZY["81"]["Size"] = UDim2.new(1, 12, 1, 12);
+
+AZY["81"]["Name"] = [[Border]];
+
+AZY["81"]["BackgroundTransparency"] = 0.6000000238418579;
+
+AZY["81"]["Position"] =
